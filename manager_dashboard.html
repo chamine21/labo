@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard manager</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <header class="header">
+    <img src="/images/lugon.png" class="logo" >
+    <nav class="navbar">
+    <a href="/">Home</a>
+    <a href="/specialities">Our specialites</a>
+    <a href="/services">Our services</a>
+    <a href="/patient_log">Patient</a>
+    <a href="//logout_m">LOGOUT</a>
+    </nav>
+  </header>
+  <div class="back">
+    <img src="/images/ba5.jpg" class="bg" alt="">
+    
+  </div>
+  
+  <div class="container">
+    
+    <h1 class="dash_title">Dashboard Administrateur</h1>
+    <div class="row">
+      <div class="col-md-3 b">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Visitors</h5>
+            <p class="card-text">1000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 g">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Users</h5>
+            <p class="card-text">50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 l">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Comments</h5>
+            <p class="card-text">50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 y">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Benefices</h5>
+            <p class="card-text">$5000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="an">Analyses</h2>
+    <table class="table">
+      <thead>
+          <th>ID d'analyse</th>
+          <th>Nom du technicien</th>
+          <th>Prix</th>
+        
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>$200</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mike Johnson</td>
+          <td>$250</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    <div class="container">
+      <img src="{{ url_for('static', filename='images/lugon.png') }}" class="logo" width="200px"; height="200px">
+    <div class="row">
+      <div class="col-md-4 contact footer-box">
+        <p> <b> contact us</b></p>
+        <p><img src="{{ url_for('static', filename='images/tel.png') }}"  class="icons"> 71 235 695</p>
+        <p><img src="{{ url_for('static', filename='images/email-removebg-preview.png') }}"  class="icons"> panda_lab@gmail.com</p>
+        <p><img src="{{ url_for('static', filename='images/locali.png') }}"  class="loc"> 20,route Ibn Mustapha,Ariana,Tunisie</p>
+        <p><img src="{{ url_for('static', filename='images/face.png') }}"  class="icons"> Panda laboratory</p>
+        <p> <img src="{{ url_for('static', filename='images/instag.png') }}"  class="icons"> Panda laboratory Tunisia</p>
+    
+    </div>
+    </div>
+    <div class="col-md-7 footer-box">
+      <p><b>biologistes at your disposal</b></p>
+      <p>Dr.Monia Ben Jemaa</p>
+      <p>Dr.Sirine Makhlouf </p>
+      <p>Dr. moncef Masmoudi</p>
+      <p>Dr.Iheb Jouini</p>
+      
+        </div>
+    
+    
+      </div>
+    
+    
+    </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/panda_lab_project/flask_app/static/style_home.css">
+    <!-- linking a css style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_log.css') }}">
+    <title>Tableau de bord du technicien biologiste</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+      
+    <style>
+          .container {
+            margin-top: 50px;
+          }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="/images/lugon.png" alt="lab_logo" class="logo" width="200px"; height="200px">
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/specialities">Our specialites</a>
+            <a href="/services">Our services</a>
+            <a href="/logout_t">LOG OUT</a>
+        </nav>
+    </header>
+    <div class="back">
+      <img src="/images/prelevement.jpg" class="bg" alt="">
+      
+    </div>
+      <div class="container">
+        <h2 class="fds">Tableau de bord du technicien biologiste</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>ID patient</th>
+              <th>Nom du patient</th>
+              <th>ID analyse</th>
+              <th>Nom de l'analyse</th>
+              <th>Date et heure</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>1</td>
+              <td>Analyse A</td>
+              <td>2023-06-14 10:00</td>
+              <td>
+                <button class="btn btn-primary">Confirmer le rendez-vous</button>
+                <button class="btn btn-secondary">Reprogrammer</button>
+                <a href="chemin_vers_le_resultat.pdf" class="btn btn-success" download>Télécharger le résultat</a>
+              </td>
+            </tr>
+            <!-- Ajoutez les autres lignes du tableau ici -->
+          </tbody>
+        </table>
+      </div>
+    
+
+
+
+
+    
+    </body>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/panda_lab_project/flask_app/static/style_home.css">
+    <!-- linking a css style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style_log.css') }}">
+      <title>Tableau de bord du technicien biologiste</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <style>
+        .container {
+          margin-top: 50px;
+        }
+      </style>
+      <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <div class="container">
+        <h2>Tableau de bord du technicien biologiste</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>ID patient</th>
+              <th>Nom du patient</th>
+              <th>ID analyse</th>
+              <th>Nom de l'analyse</th>
+              <th>Date et heure</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Doe</td>
+              <td>1</td>
+              <td>Analyse A</td>
+              <td>2023-06-14 10:00</td>
+              <td>
+                <button class="btn btn-primary">Confirmer le rendez-vous</button>
+                <button class="btn btn-secondary">Reprogrammer</button>
+                <a href="chemin_vers_le_resultat.pdf" class="btn btn-success" download>Télécharger le résultat</a>
+              </td>
+            </tr>
+            <!-- Ajoutez les autres lignes du tableau ici -->
+          </tbody>
+        </table>
+      </div>
+      <footer>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/lugon.png') }}" alt="lab_logo" class="logo" width="200px"; height="200px">
+        <div class="row">
+        <div class="col-md-4 footer-box">
+            <p> <b> contact us</b></p>
+            <p><img src="{{ url_for('static', filename='images/tel.png') }}" alt="phone_icon" class="icons"> 28 506 111</p>
+            <p><img src="{{ url_for('static', filename='images/email-removebg-preview.png') }}" alt="email_icon" class="icons"> panda_lab@gmail.com</p>
+            <p><img src="{{ url_for('static', filename='images/locali.png') }}" alt="loc_icon" class="loc"> 20,Ariana,Tunisie</p>
+            <p><img src="{{ url_for('static', filename='images/face.png') }}" alt="fb_icon" class="icons"> Panda laboratory</p>
+            <p> <img src="{{ url_for('static', filename='images/instag.png') }}" alt="insta_logo" class="icons"> Panda laboratory Tunisia</p>
+        
+        </div>
+        </div>
+        <div class="col-md-7 footer-box">
+            <p><b> Biologistes at your disposal</b></p>
+            <p>Dr.Khouloud Chaabani</p>
+            <p>Dr.Aymen Khammasi </p>
+            <p>Dr. Mariem Jouini</p>
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
